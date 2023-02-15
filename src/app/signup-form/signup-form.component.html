@@ -1,37 +1,153 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <h2>Sign up as a student</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p>Already have an account?</p>
-          </div>
-          <div class="col-md-6 text-right">
-            <a href="/en/login?source_page=home&amp;source_element=header" class="btn btn-link">Log in</a>
-          </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3 form__wrapper">
+      <div class="form__container">
+        <div class="form__headerWrapper">
+          <h2 class="form__title">Sign up as a student</h2>
+          <p>
+            Already have an account?
+            <a href="/en/login?source_page=home&amp;source_element=header"
+              >Log in</a
+            >
+          </p>
         </div>
-        <hr>
-        <form>
+        <form id="login_form" class="form__wrap">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Your name" autocomplete="off" value="">
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Your name"
+              autocomplete="off"
+              value=""
+            />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="Your email" autocomplete="off" value="">
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Your email"
+              autocomplete="off"
+              value=""
+            />
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" class="form-control" placeholder="Your password">
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Your password"
+            />
           </div>
           <div class="form-check">
-            <input type="checkbox" checked="" class="form-check-input" id="remember-me-checkbox">
-            <label class="form-check-label" for="remember-me-checkbox">Remember me</label>
+            <input
+              type="checkbox"
+              checked=""
+              class="form-check-input"
+              id="remember-me-checkbox"
+            />
+            <label class="form-check-label" for="remember-me-checkbox"
+              >Remember me</label
+            >
           </div>
-          <button type="submit" class="btn btn-primary">Sign up</button>
+          <button type="submit" class="btn btn-primary mt-3 submit__btn">
+            Sign up
+          </button>
         </form>
-        <hr>
-        <p>By clicking Continue with or Sign up, you agree to Preply <a href="https://termsofuse.preply.com/terms_of_use/en_TermsOfService.pdf" target="_blank">Terms of Service including Subscription Services Terms</a> and <a href="https://termsofuse.preply.com/terms_of_use/en_PrivacyPolicy.pdf" target="_blank">Privacy Policy</a></p>
+        <div class="form__footerWrapper">
+          <p>
+            By clicking Continue with or Sign up, you agree to Preply
+            <a
+              href="https://termsofuse.preply.com/terms_of_use/en_TermsOfService.pdf"
+              target="_blank"
+              >Terms of Service including Subscription Services Terms</a
+            >
+            and
+            <a
+              href="https://termsofuse.preply.com/terms_of_use/en_PrivacyPolicy.pdf"
+              target="_blank"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
       </div>
     </div>
   </div>
+</div>
+<style>
+  .form__container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .form__wrapper {
+  }
+  .form__wrapper .form__wrap {
+    margin-bottom: 40px;
+  }
+  .form__wrapper a {
+    color: #2e81a0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .form__wrapper .form__title {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #090f19;
+    margin-bottom: 10px;
+  }
+  .form__wrapper .form-group {
+  }
+  .form__wrapper .form-group label {
+    font-size: 14px;
+    color: #192435;
+    font-weight: 500;
+    font-family: "PreplyInterV", "PreplyInter-Fallback", sans-serif;
+  }
+  .form__wrapper .form-group .form-control {
+    font-size: 16px;
+    color: #192435;
+    font-weight: 400;
+    font-family: "PreplyInterV", "PreplyInter-Fallback", sans-serif;
+    padding: 11px 14px;
+    border: 2px solid #d8dfe6;
+  }
+  .form__wrapper .form-group .form-control:hover,
+  .form__wrapper .form-group .form-control:focus,
+  .form__wrapper .form-group .form-control:active {
+    border: 2px solid #0096b2;
+    outline: none;
+    box-shadow: none;
+  }
+  .form__wrapper .submit__btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    background: #0096b2;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .form__wrapper .submit__btn:hover {
+    background: #22a2be;
+  }
+  .form__headerWrapper p {
+    font-weight: 500;
+    color: #090f19;
+  }
+  .form__footerWrapper {
+  }
+  .form__footerWrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8194a7;
+    text-align: center;
+  }
+</style>
